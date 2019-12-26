@@ -33,7 +33,6 @@ function App() {
 
   return (
     <div id="quote-box">
-      <h1>Ron Swanson Quotes</h1>
       <p id="text">{quote}</p>
       <p id="author">Ron Swanson</p>
       <button 
