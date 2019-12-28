@@ -1,19 +1,25 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.scss';
 import $ from 'jquery';
 
 function App() {
-  const [quote, setQuote] = useState('Loading');
-  
-  const fetchQuote = async () => {
+  const [quote, setQuote] = useState('');
+
+  const fetchQuote = () => {
     //See GitHub for API documentation
     //https://github.com/jamesseanwright/ron-swanson-quotes
 
-    const response = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
-    const json = await response.json();
-    const output = json[0]
-    setQuote(output);
-    tweetUrl(output);
+    fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        const newQuote = json[0];
+        $('#text').slideUp(600, 
+            () => setQuote(newQuote))
+            .slideDown(800);
+        tweetUrl(newQuote);
+      })
   }
 
   const tweetUrl = (output) => {
