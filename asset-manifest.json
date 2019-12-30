@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/random-quote-generator/static/css/main.2eae73b9.chunk.css",
+    "main.js": "/random-quote-generator/static/js/main.e762ad46.chunk.js",
+    "main.js.map": "/random-quote-generator/static/js/main.e762ad46.chunk.js.map",
+    "runtime-main.js": "/random-quote-generator/static/js/runtime-main.d2bec475.js",
+    "runtime-main.js.map": "/random-quote-generator/static/js/runtime-main.d2bec475.js.map",
+    "static/js/2.cc45aa5a.chunk.js": "/random-quote-generator/static/js/2.cc45aa5a.chunk.js",
+    "static/js/2.cc45aa5a.chunk.js.map": "/random-quote-generator/static/js/2.cc45aa5a.chunk.js.map",
+    "index.html": "/random-quote-generator/index.html",
+    "precache-manifest.13db634bdff4e38d82c9e337a736114b.js": "/random-quote-generator/precache-manifest.13db634bdff4e38d82c9e337a736114b.js",
+    "service-worker.js": "/random-quote-generator/service-worker.js",
+    "static/css/main.2eae73b9.chunk.css.map": "/random-quote-generator/static/css/main.2eae73b9.chunk.css.map",
+    "static/js/2.cc45aa5a.chunk.js.LICENSE": "/random-quote-generator/static/js/2.cc45aa5a.chunk.js.LICENSE",
+    "static/media/App.scss": "/random-quote-generator/static/media/ron-swanson.9003ec98.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2bec475.js",
+    "static/js/2.cc45aa5a.chunk.js",
+    "static/css/main.2eae73b9.chunk.css",
+    "static/js/main.e762ad46.chunk.js"
+  ]
+}
