@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 
 #quote-box {
   height: 100vh;
@@ -15,21 +15,64 @@
   background-position: center;
   background-size: cover;
 
-  font-family: "Playfair Display", serif;
   color: white;
 
   #text {
-    font-size: 2em;
-    margin: 1em;
+    font-family: "Anton", sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    max-width: 330px;
+  }
+
+  @media screen and (min-width: 800px) {
+    #text {
+      max-width: 700px;
+    }
+  }
+
+  #header {
+    font-family: "Caveat", cursive;
+    font-size: 3em;
+    margin: 0;
+
+    position: absolute;
+    top: 50px;
+  }
+
+  #new-quote,
+  #tweet-quote {
+    font-weight: 600;
+    position: absolute;
+    bottom: 50px;
+    font-size: 1.2em;
+    padding: 0.5em;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    svg {
+      padding: 0.3em;
+    }
+  }
+
+  #new-quote {
+    margin-left: -90px;
+
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  #tweet-quote {
+    margin-left: 110px;
+    color: white;
   }
 
   #author {
-    font-family: "Caveat", cursive;
-    font-size: 4em;
-  }
-
-  button {
-    font-family: "Playfair Display", serif;
-    background-color: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
   }
 }
